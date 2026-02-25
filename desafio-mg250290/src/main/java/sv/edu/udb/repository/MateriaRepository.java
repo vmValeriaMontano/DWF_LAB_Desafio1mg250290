@@ -1,4 +1,7 @@
 package sv.edu.udb.repository;
 
-public class MateriaRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+import sv.edu.udb.domain.Materia;
+
+public interface MateriaRepository extends JpaRepository<Materia, Long> {
 }
