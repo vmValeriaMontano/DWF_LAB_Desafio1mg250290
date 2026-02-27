@@ -1,3 +1,4 @@
+----------------DATOS
 -- Profesores
 INSERT INTO profesor (nombre) VALUES ('Carlos Martinez');
 INSERT INTO profesor (nombre) VALUES ('Ana Lopez');

@@ -1,3 +1,4 @@
+--------------------- TABLAS
 -- Tabla Profesor
 CREATE TABLE profesor (
     id BIGINT AUTO_INCREMENT PRIMARY KEY,

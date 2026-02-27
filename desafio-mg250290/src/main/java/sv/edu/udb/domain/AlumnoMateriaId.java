@@ -5,7 +5,7 @@ import java.io.Serializable;
 import java.util.Objects;
 
 //Tabla intermedia
-@Embeddable //usaremos una clave compuesta
+@Embeddable //clave compuesta
 public class AlumnoMateriaId implements Serializable {
 
     private Long idAlumno;
