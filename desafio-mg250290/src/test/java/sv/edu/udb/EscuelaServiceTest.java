@@ -65,16 +65,18 @@ public class EscuelaServiceTest {
         //1- profesor
         var profesor = escuelaService.guardarProfesor("Profesor Y");
         //2- alumno
-        var alumno = escuelaService.guardarAlumno("Ana", "Perez");
+        var alumno1 = escuelaService.guardarAlumno("Ana", "Perez");
+        var alumno2 = escuelaService.guardarAlumno("Luis", "Martinez");
         //3- materia
         var materia = escuelaService.guardarMateria("Java", profesor.getId());
         //verificamos que no es NULL
-        assertNotNull(alumno.getId());
+        assertNotNull(alumno1.getId());
+        assertNotNull(alumno2.getId());
         assertNotNull(materia.getId());
 
         //llamar
-        escuelaService.inscribirAlumno(alumno.getId(), materia.getId());
-
+        escuelaService.inscribirAlumno(alumno1.getId(), materia.getId());
+        escuelaService.inscribirAlumno(alumno2.getId(), materia.getId());
 
     }
 }
